@@ -352,6 +352,100 @@ button {
   display: none !important;
 }
 
+/* AI Counseling Panel Styles */
+.ai-counseling-panel {
+  margin-top: 32px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.ai-counseling-panel .section-title {
+  background: var(--surface-strong);
+  padding: 16px 22px;
+  margin: 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.ai-panel-body {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.selected-student-info h4,
+.preview-area h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: var(--teal);
+}
+
+.selected-student-info p {
+  margin: 0;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.teacher-input-area label {
+  display: block;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.teacher-input-area textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 12px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.teacher-input-area textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.13);
+}
+
+.preview-area pre {
+  margin: 0;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+.ai-request-btn {
+  align-self: flex-start;
+}
+
+.ai-response-area {
+  padding: 16px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 6px;
+  line-height: 1.6;
+}
+
+.ai-response-area.error-message {
+  background: #fef2f2;
+  border-color: #fecaca;
+  color: var(--danger);
+}
+
+.ai-notice {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+  text-align: center;
+}
+
 @media (max-width: 860px) {
   .login-layout,
   .student-layout,
